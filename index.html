@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-bt">
+<head>
+  <title>i-commerce</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    
+
+<nav class="navbar navbar-expand-sm bg-danger navbar-dark fixed-top">
+    <a class="navbar-brand" href="#"><i class="fa fa-info"></i>-Commerce</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavbar">
+            <form class="form-inline mt-2 mt--0" action="#">
+                <input type="text" class="form-control mr-sm-1" placeholder="Procurar.." name="search">
+                <button type="submit" class=" btn btn-light mr-sm-2"><i class="fa fa-search"></i></button>
+            </form>
+        <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-home"></i> Início</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#"><i class="fa fa-user"></i> Conta</a>
+            </li>
+            <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fa fa-question-circle"></i> Suporte</a>
+                </li>
+            
+        </ul>
+  </div>
+</nav>
+<br>
+<div class="container container-toggler"  style="margin-left: auto; margin-right: auto; width: 500px; text-align: center; margin-top:50px">
+        <div class="btn-group btn-group-lg" style="text-align: center">
+            <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#login">Login</button>
+            <button type="button" class="btn btn-light text-dark" data-toggle="collapse" data-target="#cadastro">Cadastro</button>
+        </div>
+    <div id="selecao" style="max-width: 500px; text-align: left">
+        <div id="login" class="collapse show">
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd">
+                </div>
+                <div class="form-group" style="text-align: center">
+                    <button type="submit" class="btn btn-danger">Entrar</button>
+                </div>
+                </form>
+            </form>
+        </div>
+        <div id="cadastro" class="collapse">
+            <br>
+            <form action="/action_page.php">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" class="form-control" id="nome" placeholder="Digite seu nome completo" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Senha:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Senha" name="pswd">
+                </div>
+                <div class="form-group">
+                    <label for="pwd">Confirme sua senha:</label>
+                    <input type="password" class="form-control" id="pwd" placeholder="Confirme sua senha" name="pswd">
+                </div>
+                <div class="form-group" style="text-align: center">
+                    <button type="submit" class="btn btn-danger">Continuar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
+</div>
+
+</body>
+</html>
